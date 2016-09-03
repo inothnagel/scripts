@@ -1,1 +1,11 @@
-subl "/Users/inothnagel/Dropbox/Notational Velocity/$(date +%Y-%m-%d-%H-%M-%S).txt"
+#!/usr/bin/env bash
+
+# Creates a new text file in my Notational Velocity directory named like 'writing-2014-09-03-22-27-17.txt' and edits it with Sublime Text
+
+if ! [ -z ${var+x} ]; then
+    echo "The variable IG_NOTATIONAL_VELOCITY_PATH is unset. Please set it."
+    exit 1
+fi
+
+subl "$IG_NOTATIONAL_VELOCITY_PATH/writing-$(date +%Y-%m-%d-%H-%M-%S).txt"
+
