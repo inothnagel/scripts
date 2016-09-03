@@ -1,0 +1,1 @@
+subl "/Users/inothnagel/Dropbox/Notational Velocity/$(date +%Y-%m-%d-%H-%M-%S).txt"
